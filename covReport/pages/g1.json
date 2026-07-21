@@ -1,0 +1,18 @@
+var g_data = {
+g463:[{dummy:0},
+{name:'mon_cg',f:1,type:1,id:465,tb:'8',h:'8',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','auto(true)']],parent:'463'}],
+c465:{name:'mon_cg',type:1,pHash:'463',pPath:'/apb_pkg/apb_driver',totals:[8,8,'100.00%','G',0,0,'0.00%','R'],cvp:[{dummy:0},
+{name:'writeread',f:1,type:4,id:466,tb:'2',h:'2',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'465'},
+{name:'trans',f:1,type:4,id:467,tb:'2',h:'2',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'465'},
+{name:'slave_error',f:1,type:4,id:468,tb:'2',h:'2',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'465'},
+{name:'ready',f:1,type:4,id:469,tb:'2',h:'2',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'465'}],crx:[{dummy:0}]},
+g718:[{dummy:0},
+{name:'mon_cg',f:1,type:1,id:720,tb:'8',h:'8',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','true']],parent:'718'}],
+c720:{name:'mon_cg',type:1,pHash:'718',pPath:'work.apb_pkg::apb_driver',totals:[8,8,'100.00%','G',0,0,'0.00%','R'],cvp:[{dummy:0},
+{name:'writeread',f:1,type:4,id:721,tb:'2',h:'2',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'720'},
+{name:'trans',f:1,type:4,id:722,tb:'2',h:'2',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'720'},
+{name:'slave_error',f:1,type:4,id:723,tb:'2',h:'2',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'720'},
+{name:'ready',f:1,type:4,id:724,tb:'2',h:'2',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'720'}],crx:[{dummy:0}]},
+dummyEnd:0
+};
+processCovergroupsData(g_data);

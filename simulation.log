@@ -1,0 +1,499 @@
+# vsim -vopt work.top -voptargs="+acc=npr" -assertdebug -l simulation.log -coverage -c -do "coverage save -onexit -assert -directive -cvg -codeAll coverage.ucdb; run -all; exit" 
+# Start time: 22:18:04 on Jul 21,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.apb_if(fast)
+# Loading work.apb_pkg(fast)
+# Loading work.top(fast)
+# Loading work.apb_if(fast)
+# Loading work.apb_master(fast)
+# ** Warning: (vsim-8441) apb_driver.sv(54): Clocking block output vif.drv_cb.PRDATA is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(55): Clocking block output vif.drv_cb.PREADY is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(56): Clocking block output vif.drv_cb.PSLVERR is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(52): Clocking block output vif.drv_cb.addr_in is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(58): Clocking block output vif.drv_cb.strb_in is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(53): Clocking block output vif.drv_cb.transfer is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(51): Clocking block output vif.drv_cb.wdata_in is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(57): Clocking block output vif.drv_cb.write_read is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(54): Clocking block output vif.drv_cb.PRDATA is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(56): Clocking block output vif.drv_cb.PSLVERR is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(55): Clocking block output vif.drv_cb.PREADY is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(58): Clocking block output vif.drv_cb.strb_in is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(57): Clocking block output vif.drv_cb.write_read is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(52): Clocking block output vif.drv_cb.addr_in is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(51): Clocking block output vif.drv_cb.wdata_in is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(53): Clocking block output vif.drv_cb.transfer is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(54): Clocking block output vif.drv_cb.PRDATA is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(56): Clocking block output vif.drv_cb.PSLVERR is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(55): Clocking block output vif.drv_cb.PREADY is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(58): Clocking block output vif.drv_cb.strb_in is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(57): Clocking block output vif.drv_cb.write_read is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(52): Clocking block output vif.drv_cb.addr_in is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(51): Clocking block output vif.drv_cb.wdata_in is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(53): Clocking block output vif.drv_cb.transfer is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(58): Clocking block output vif.drv_cb.strb_in is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(57): Clocking block output vif.drv_cb.write_read is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(56): Clocking block output vif.drv_cb.PSLVERR is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(55): Clocking block output vif.drv_cb.PREADY is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(54): Clocking block output vif.drv_cb.PRDATA is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(53): Clocking block output vif.drv_cb.transfer is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(52): Clocking block output vif.drv_cb.addr_in is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# ** Warning: (vsim-8441) apb_driver.sv(51): Clocking block output vif.drv_cb.wdata_in is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_pkg File: apb_package.sv
+# coverage save -onexit -assert -directive -cvg -codeAll coverage.ucdb
+#  run -all
+# generator: :  transfer=0 | pready =0  | write_read =1 | wdata_in =       140 | addr_in =146 |  strb = 1 |  pslverr=1 | prdata =       210   
+# generator: :  transfer=0 | pready =0  | write_read =1 | wdata_in =       231 | addr_in =245 |  strb = 0 |  pslverr=0 | prdata =       112   
+# generator: :  transfer=0 | pready =0  | write_read =1 | wdata_in =       142 | addr_in =171 |  strb = 8 |  pslverr=0 | prdata =        43   
+# generator: :  transfer=1 | pready =0  | write_read =1 | wdata_in =       153 | addr_in =114 |  strb = 4 |  pslverr=1 | prdata =       153   
+# generator: :  transfer=1 | pready =0  | write_read =1 | wdata_in =       153 | addr_in =114 |  strb = 1 |  pslverr=0 | prdata =       136   
+# generator: :  transfer=1 | pready =0  | write_read =1 | wdata_in =       153 | addr_in =114 |  strb = 9 |  pslverr=0 | prdata =        75   
+# generator: :  transfer=1 | pready =1  | write_read =1 | wdata_in =       153 | addr_in =114 |  strb = 2 |  pslverr=1 | prdata =       248   
+# generator: :  transfer=1 | pready =1  | write_read =1 | wdata_in =       127 | addr_in = 30 |  strb =13 |  pslverr=1 | prdata =        21   
+# generator: :  transfer=1 | pready =1  | write_read =1 | wdata_in =       164 | addr_in = 61 |  strb = 0 |  pslverr=0 | prdata =       134   
+# generator: :  transfer=0 | pready =1  | write_read =1 | wdata_in =        33 | addr_in =198 |  strb = 6 |  pslverr=1 | prdata =        97   
+# generator: :  transfer=0 | pready =0  | write_read =1 | wdata_in =        15 | addr_in =239 |  strb = 8 |  pslverr=1 | prdata =        52   
+# generator: :  transfer=1 | pready =0  | write_read =1 | wdata_in =       194 | addr_in =204 |  strb =15 |  pslverr=0 | prdata =        90   
+# generator: :  transfer=1 | pready =1  | write_read =1 | wdata_in =       194 | addr_in =204 |  strb = 6 |  pslverr=0 | prdata =       169   
+# generator: :  transfer=0 | pready =0  | write_read =1 | wdata_in =        52 | addr_in =220 |  strb = 0 |  pslverr=0 | prdata =        21   
+# generator: :  transfer=0 | pready =0  | write_read =1 | wdata_in =        14 | addr_in =235 |  strb =11 |  pslverr=1 | prdata =       130   
+# generator: :  transfer=0 | pready =0  | write_read =1 | wdata_in =       231 | addr_in =249 |  strb = 4 |  pslverr=1 | prdata =       167   
+# generator: :  transfer=0 | pready =1  | write_read =1 | wdata_in =        27 | addr_in =182 |  strb = 7 |  pslverr=1 | prdata =        92   
+# generator: :  transfer=0 | pready =0  | write_read =1 | wdata_in =       208 | addr_in = 38 |  strb = 2 |  pslverr=1 | prdata =       169   
+# generator: :  transfer=0 | pready =1  | write_read =1 | wdata_in =       180 | addr_in = 22 |  strb = 1 |  pslverr=1 | prdata =       236   
+# generator: :  transfer=0 | pready =1  | write_read =1 | wdata_in =       139 | addr_in = 53 |  strb = 7 |  pslverr=0 | prdata =        16   
+# ====================================================================================================================================================
+# 
+# driver: :  transfer=0 | wdata =       140 | addr =146 | write_read =1  | strb = 1 | pready =0 | pslverr=1 | prdata =       210  | time=70 
+#  monitor : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0 | time=70
+# apb_pkg.apb_reference.run  ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0  | time =70 
+# scoreboard : pass
+# ====================================================================================================================================================
+# 
+# driver: :  transfer=0 | wdata =       231 | addr =245 | write_read =1  | strb = 0 | pready =0 | pslverr=0 | prdata =       112  | time=90 
+#  monitor : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0 | time=90
+# apb_pkg.apb_reference.run  ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0  | time =90 
+# scoreboard : pass
+# ====================================================================================================================================================
+# 
+# driver: :  transfer=0 | wdata =       142 | addr =171 | write_read =1  | strb = 8 | pready =0 | pslverr=0 | prdata =        43  | time=110 
+#  monitor : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0 | time=110
+# apb_pkg.apb_reference.run  ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0  | time =110 
+# scoreboard : pass
+# ====================================================================================================================================================
+# 
+# driver: :  transfer=1 | wdata =       153 | addr =114 | write_read =1  | strb = 4 | pready =0 | pslverr=1 | prdata =       153  | time=130 
+#  monitor : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0 | time=130
+# apb_pkg.apb_reference.run  ref:fail : psel =1  | paddr=114 | pwrite=1 | penable =0 | transfer_done=0  | pstrb = 4  | pwdata =       153  | rdata =         0  | error =0  | time =130 
+# scoreboard mon:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0 | tine =130 
+# scoreboard ref:fail : psel =1  | paddr=114 | pwrite=1 | penable =0 | transfer_done=0  | pstrb = 4  | pwdata =       153  | rdata =         0  | error =0 | time =130
+# ====================================================================================================================================================
+# 
+# driver: :  transfer=1 | wdata =       153 | addr =114 | write_read =1  | strb = 1 | pready =0 | pslverr=0 | prdata =       136  | time=150 
+#  monitor : psel =1  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0 | time=150
+# apb_pkg.apb_reference.run  ref:fail : psel =1  | paddr=114 | pwrite=1 | penable =0 | transfer_done=0  | pstrb = 1  | pwdata =       153  | rdata =         0  | error =0  | time =150 
+# scoreboard mon:fail : psel =1  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0 | tine =150 
+# scoreboard ref:fail : psel =1  | paddr=114 | pwrite=1 | penable =0 | transfer_done=0  | pstrb = 1  | pwdata =       153  | rdata =         0  | error =0 | time =150
+# ====================================================================================================================================================
+# 
+# driver: :  transfer=1 | wdata =       153 | addr =114 | write_read =1  | strb = 9 | pready =0 | pslverr=0 | prdata =        75  | time=170 
+#  monitor : psel =1  | paddr=114 | pwrite=1 | penable =1 | transfer_done=0  | pstrb = 4  | pwdata =       153  | rdata =         0  | error =0 | time=170
+# apb_pkg.apb_reference.run  ref:fail : psel =1  | paddr=114 | pwrite=1 | penable =0 | transfer_done=0  | pstrb = 9  | pwdata =       153  | rdata =         0  | error =0  | time =170 
+# scoreboard mon:fail : psel =1  | paddr=114 | pwrite=1 | penable =1 | transfer_done=0  | pstrb = 4  | pwdata =       153  | rdata =         0  | error =0 | tine =170 
+# scoreboard ref:fail : psel =1  | paddr=114 | pwrite=1 | penable =0 | transfer_done=0  | pstrb = 9  | pwdata =       153  | rdata =         0  | error =0 | time =170
+# ====================================================================================================================================================
+# 
+# driver: :  transfer=1 | wdata =       153 | addr =114 | write_read =1  | strb = 2 | pready =1 | pslverr=1 | prdata =       248  | time=190 
+#  monitor : psel =1  | paddr=114 | pwrite=1 | penable =1 | transfer_done=0  | pstrb = 4  | pwdata =       153  | rdata =         0  | error =0 | time=190
+# apb_pkg.apb_reference.run  ref:fail : psel =1  | paddr=114 | pwrite=1 | penable =0 | transfer_done=0  | pstrb = 2  | pwdata =       153  | rdata =         0  | error =0  | time =190 
+# scoreboard mon:fail : psel =1  | paddr=114 | pwrite=1 | penable =1 | transfer_done=0  | pstrb = 4  | pwdata =       153  | rdata =         0  | error =0 | tine =190 
+# scoreboard ref:fail : psel =1  | paddr=114 | pwrite=1 | penable =0 | transfer_done=0  | pstrb = 2  | pwdata =       153  | rdata =         0  | error =0 | time =190
+# ====================================================================================================================================================
+# 
+# ** Error: Assertion error.
+#    Time: 190 ns Started: 170 ns  Scope: top.intrf File: apb_interface.sv Line: 52 Expr: ~PENABLE
+# driver: :  transfer=1 | wdata =       127 | addr = 30 | write_read =1  | strb =13 | pready =1 | pslverr=1 | prdata =        21  | time=210 
+#  monitor : psel =0  | paddr=114 | pwrite=1 | penable =0 | transfer_done=1  | pstrb = 4  | pwdata =       153  | rdata =         0  | error =1 | time=210
+# apb_pkg.apb_reference.run  ref:fail : psel =1  | paddr= 30 | pwrite=1 | penable =0 | transfer_done=0  | pstrb =13  | pwdata =       127  | rdata =         0  | error =0  | time =210 
+# scoreboard mon:fail : psel =0  | paddr=114 | pwrite=1 | penable =0 | transfer_done=1  | pstrb = 4  | pwdata =       153  | rdata =         0  | error =1 | tine =210 
+# scoreboard ref:fail : psel =1  | paddr= 30 | pwrite=1 | penable =0 | transfer_done=0  | pstrb =13  | pwdata =       127  | rdata =         0  | error =0 | time =210
+# ====================================================================================================================================================
+# 
+# ** Error: Assertion error.
+#    Time: 210 ns Started: 190 ns  Scope: top.intrf File: apb_interface.sv Line: 52 Expr: ~PENABLE
+# driver: :  transfer=1 | wdata =       164 | addr = 61 | write_read =1  | strb = 0 | pready =1 | pslverr=0 | prdata =       134  | time=230 
+#  monitor : psel =1  | paddr=114 | pwrite=1 | penable =0 | transfer_done=0  | pstrb = 4  | pwdata =       153  | rdata =         0  | error =0 | time=230
+# apb_pkg.apb_reference.run  ref:fail : psel =1  | paddr= 61 | pwrite=1 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =       164  | rdata =         0  | error =0  | time =230 
+# scoreboard mon:fail : psel =1  | paddr=114 | pwrite=1 | penable =0 | transfer_done=0  | pstrb = 4  | pwdata =       153  | rdata =         0  | error =0 | tine =230 
+# scoreboard ref:fail : psel =1  | paddr= 61 | pwrite=1 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =       164  | rdata =         0  | error =0 | time =230
+# ====================================================================================================================================================
+# 
+# ** Error: Assertion error.
+#    Time: 230 ns Started: 210 ns  Scope: top.intrf File: apb_interface.sv Line: 52 Expr: PSEL
+# driver: :  transfer=0 | wdata =        33 | addr =198 | write_read =1  | strb = 6 | pready =1 | pslverr=1 | prdata =        97  | time=250 
+#  monitor : psel =1  | paddr= 30 | pwrite=1 | penable =1 | transfer_done=0  | pstrb =13  | pwdata =       127  | rdata =         0  | error =0 | time=250
+# apb_pkg.apb_reference.run  ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0  | time =250 
+# scoreboard mon:fail : psel =1  | paddr= 30 | pwrite=1 | penable =1 | transfer_done=0  | pstrb =13  | pwdata =       127  | rdata =         0  | error =0 | tine =250 
+# scoreboard ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0 | time =250
+# ====================================================================================================================================================
+# 
+# driver: :  transfer=0 | wdata =        15 | addr =239 | write_read =1  | strb = 8 | pready =0 | pslverr=1 | prdata =        52  | time=270 
+#  monitor : psel =0  | paddr= 30 | pwrite=1 | penable =0 | transfer_done=1  | pstrb =13  | pwdata =       127  | rdata =         0  | error =1 | time=270
+# apb_pkg.apb_reference.run  ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0  | time =270 
+# scoreboard mon:fail : psel =0  | paddr= 30 | pwrite=1 | penable =0 | transfer_done=1  | pstrb =13  | pwdata =       127  | rdata =         0  | error =1 | tine =270 
+# scoreboard ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0 | time =270
+# ====================================================================================================================================================
+# 
+# ** Error: Assertion error.
+#    Time: 270 ns Started: 270 ns  Scope: top.intrf File: apb_interface.sv Line: 45 Expr: ~PSEL
+# ** Error: Assertion error.
+#    Time: 270 ns Started: 250 ns  Scope: top.intrf File: apb_interface.sv Line: 52 Expr: ~PENABLE
+# driver: :  transfer=1 | wdata =       194 | addr =204 | write_read =1  | strb =15 | pready =0 | pslverr=0 | prdata =        90  | time=290 
+#  monitor : psel =0  | paddr= 30 | pwrite=1 | penable =0 | transfer_done=0  | pstrb =13  | pwdata =       127  | rdata =         0  | error =0 | time=290
+# apb_pkg.apb_reference.run  ref:fail : psel =1  | paddr=204 | pwrite=1 | penable =0 | transfer_done=0  | pstrb =15  | pwdata =       194  | rdata =         0  | error =0  | time =290 
+# scoreboard mon:fail : psel =0  | paddr= 30 | pwrite=1 | penable =0 | transfer_done=0  | pstrb =13  | pwdata =       127  | rdata =         0  | error =0 | tine =290 
+# scoreboard ref:fail : psel =1  | paddr=204 | pwrite=1 | penable =0 | transfer_done=0  | pstrb =15  | pwdata =       194  | rdata =         0  | error =0 | time =290
+# ====================================================================================================================================================
+# 
+# driver: :  transfer=1 | wdata =       194 | addr =204 | write_read =1  | strb = 6 | pready =1 | pslverr=0 | prdata =       169  | time=310 
+#  monitor : psel =1  | paddr= 30 | pwrite=1 | penable =0 | transfer_done=0  | pstrb =13  | pwdata =       127  | rdata =         0  | error =0 | time=310
+# apb_pkg.apb_reference.run  ref:fail : psel =1  | paddr=204 | pwrite=1 | penable =0 | transfer_done=0  | pstrb = 6  | pwdata =       194  | rdata =         0  | error =0  | time =310 
+# scoreboard mon:fail : psel =1  | paddr= 30 | pwrite=1 | penable =0 | transfer_done=0  | pstrb =13  | pwdata =       127  | rdata =         0  | error =0 | tine =310 
+# scoreboard ref:fail : psel =1  | paddr=204 | pwrite=1 | penable =0 | transfer_done=0  | pstrb = 6  | pwdata =       194  | rdata =         0  | error =0 | time =310
+# ====================================================================================================================================================
+# 
+# driver: :  transfer=0 | wdata =        52 | addr =220 | write_read =1  | strb = 0 | pready =0 | pslverr=0 | prdata =        21  | time=330 
+#  monitor : psel =1  | paddr=204 | pwrite=1 | penable =1 | transfer_done=0  | pstrb =15  | pwdata =       194  | rdata =         0  | error =0 | time=330
+# apb_pkg.apb_reference.run  ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0  | time =330 
+# scoreboard mon:fail : psel =1  | paddr=204 | pwrite=1 | penable =1 | transfer_done=0  | pstrb =15  | pwdata =       194  | rdata =         0  | error =0 | tine =330 
+# scoreboard ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0 | time =330
+# ====================================================================================================================================================
+# 
+# driver: :  transfer=0 | wdata =        14 | addr =235 | write_read =1  | strb =11 | pready =0 | pslverr=1 | prdata =       130  | time=350 
+#  monitor : psel =1  | paddr=204 | pwrite=1 | penable =1 | transfer_done=0  | pstrb =15  | pwdata =       194  | rdata =         0  | error =0 | time=350
+# apb_pkg.apb_reference.run  ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0  | time =350 
+# scoreboard mon:fail : psel =1  | paddr=204 | pwrite=1 | penable =1 | transfer_done=0  | pstrb =15  | pwdata =       194  | rdata =         0  | error =0 | tine =350 
+# scoreboard ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0 | time =350
+# ====================================================================================================================================================
+# 
+# ** Error: Assertion error.
+#    Time: 350 ns Started: 350 ns  Scope: top.intrf File: apb_interface.sv Line: 45 Expr: ~PSEL
+# ** Error: Assertion error.
+#    Time: 350 ns Started: 330 ns  Scope: top.intrf File: apb_interface.sv Line: 52 Expr: ~PENABLE
+# driver: :  transfer=0 | wdata =       231 | addr =249 | write_read =1  | strb = 4 | pready =0 | pslverr=1 | prdata =       167  | time=370 
+#  monitor : psel =1  | paddr=204 | pwrite=1 | penable =1 | transfer_done=0  | pstrb =15  | pwdata =       194  | rdata =         0  | error =0 | time=370
+# apb_pkg.apb_reference.run  ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0  | time =370 
+# scoreboard mon:fail : psel =1  | paddr=204 | pwrite=1 | penable =1 | transfer_done=0  | pstrb =15  | pwdata =       194  | rdata =         0  | error =0 | tine =370 
+# scoreboard ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0 | time =370
+# ====================================================================================================================================================
+# 
+# ** Error: Assertion error.
+#    Time: 370 ns Started: 370 ns  Scope: top.intrf File: apb_interface.sv Line: 45 Expr: ~PSEL
+# driver: :  transfer=0 | wdata =        27 | addr =182 | write_read =1  | strb = 7 | pready =1 | pslverr=1 | prdata =        92  | time=390 
+#  monitor : psel =1  | paddr=204 | pwrite=1 | penable =1 | transfer_done=0  | pstrb =15  | pwdata =       194  | rdata =         0  | error =0 | time=390
+# apb_pkg.apb_reference.run  ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0  | time =390 
+# scoreboard mon:fail : psel =1  | paddr=204 | pwrite=1 | penable =1 | transfer_done=0  | pstrb =15  | pwdata =       194  | rdata =         0  | error =0 | tine =390 
+# scoreboard ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0 | time =390
+# ====================================================================================================================================================
+# 
+# ** Error: Assertion error.
+#    Time: 390 ns Started: 390 ns  Scope: top.intrf File: apb_interface.sv Line: 45 Expr: ~PSEL
+# driver: :  transfer=0 | wdata =       208 | addr = 38 | write_read =1  | strb = 2 | pready =0 | pslverr=1 | prdata =       169  | time=410 
+#  monitor : psel =0  | paddr=204 | pwrite=1 | penable =0 | transfer_done=1  | pstrb =15  | pwdata =       194  | rdata =         0  | error =1 | time=410
+# apb_pkg.apb_reference.run  ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0  | time =410 
+# scoreboard mon:fail : psel =0  | paddr=204 | pwrite=1 | penable =0 | transfer_done=1  | pstrb =15  | pwdata =       194  | rdata =         0  | error =1 | tine =410 
+# scoreboard ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0 | time =410
+# ====================================================================================================================================================
+# 
+# ** Error: Assertion error.
+#    Time: 410 ns Started: 410 ns  Scope: top.intrf File: apb_interface.sv Line: 45 Expr: ~PSEL
+# driver: :  transfer=0 | wdata =       180 | addr = 22 | write_read =1  | strb = 1 | pready =1 | pslverr=1 | prdata =       236  | time=430 
+#  monitor : psel =0  | paddr=204 | pwrite=1 | penable =0 | transfer_done=0  | pstrb =15  | pwdata =       194  | rdata =         0  | error =0 | time=430
+# apb_pkg.apb_reference.run  ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0  | time =430 
+# scoreboard mon:fail : psel =0  | paddr=204 | pwrite=1 | penable =0 | transfer_done=0  | pstrb =15  | pwdata =       194  | rdata =         0  | error =0 | tine =430 
+# scoreboard ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0 | time =430
+# ====================================================================================================================================================
+# 
+# driver: :  transfer=0 | wdata =       139 | addr = 53 | write_read =1  | strb = 7 | pready =1 | pslverr=0 | prdata =        16  | time=450 
+#  monitor : psel =0  | paddr=204 | pwrite=1 | penable =0 | transfer_done=0  | pstrb =15  | pwdata =       194  | rdata =         0  | error =0 | time=450
+# apb_pkg.apb_reference.run  ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0  | time =450 
+# scoreboard mon:fail : psel =0  | paddr=204 | pwrite=1 | penable =0 | transfer_done=0  | pstrb =15  | pwdata =       194  | rdata =         0  | error =0 | tine =450 
+# scoreboard ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0 | time =450
+# ====================================================================================================================================================
+# 
+# generator: :  transfer=1 | pready =1  | write_read =0 | wdata_in =       247 | addr_in = 44 |  strb =10 |  pslverr=0 | prdata =        40   
+# generator: :  transfer=1 | pready =1  | write_read =0 | wdata_in =        68 | addr_in = 20 |  strb = 0 |  pslverr=0 | prdata =        30   
+# generator: :  transfer=0 | pready =0  | write_read =0 | wdata_in =        13 | addr_in =206 |  strb =11 |  pslverr=0 | prdata =        76   
+# generator: :  transfer=1 | pready =1  | write_read =0 | wdata_in =        76 | addr_in =103 |  strb = 0 |  pslverr=0 | prdata =         9   
+# generator: :  transfer=1 | pready =0  | write_read =0 | wdata_in =       180 | addr_in =145 |  strb =13 |  pslverr=0 | prdata =       134   
+# generator: :  transfer=1 | pready =0  | write_read =0 | wdata_in =       136 | addr_in =145 |  strb = 3 |  pslverr=1 | prdata =       134   
+# generator: :  transfer=0 | pready =0  | write_read =0 | wdata_in =       250 | addr_in =145 |  strb = 4 |  pslverr=1 | prdata =       134   
+# generator: :  transfer=1 | pready =1  | write_read =0 | wdata_in =        20 | addr_in =145 |  strb = 1 |  pslverr=0 | prdata =       134   
+# generator: :  transfer=1 | pready =1  | write_read =0 | wdata_in =        42 | addr_in = 96 |  strb = 2 |  pslverr=1 | prdata =       159   
+# generator: :  transfer=1 | pready =1  | write_read =0 | wdata_in =       208 | addr_in =203 |  strb = 5 |  pslverr=0 | prdata =       193   
+# generator: :  transfer=0 | pready =1  | write_read =0 | wdata_in =        98 | addr_in =248 |  strb = 5 |  pslverr=0 | prdata =        51   
+# generator: :  transfer=1 | pready =0  | write_read =0 | wdata_in =        85 | addr_in =246 |  strb = 7 |  pslverr=0 | prdata =       235   
+# generator: :  transfer=1 | pready =0  | write_read =0 | wdata_in =       104 | addr_in =246 |  strb = 5 |  pslverr=0 | prdata =       235   
+# generator: :  transfer=1 | pready =1  | write_read =0 | wdata_in =        79 | addr_in =246 |  strb = 7 |  pslverr=1 | prdata =       235   
+# generator: :  transfer=1 | pready =1  | write_read =0 | wdata_in =       110 | addr_in =229 |  strb =15 |  pslverr=0 | prdata =       247   
+# generator: :  transfer=0 | pready =0  | write_read =0 | wdata_in =        84 | addr_in =213 |  strb =12 |  pslverr=1 | prdata =        27   
+# generator: :  transfer=1 | pready =1  | write_read =0 | wdata_in =       159 | addr_in =110 |  strb = 2 |  pslverr=1 | prdata =       173   
+# generator: :  transfer=1 | pready =0  | write_read =0 | wdata_in =       153 | addr_in =155 |  strb = 5 |  pslverr=1 | prdata =       208   
+# generator: :  transfer=0 | pready =1  | write_read =0 | wdata_in =       229 | addr_in =155 |  strb = 7 |  pslverr=1 | prdata =       208   
+# generator: :  transfer=1 | pready =1  | write_read =0 | wdata_in =       178 | addr_in =155 |  strb = 3 |  pslverr=1 | prdata =       208   
+# ====================================================================================================================================================
+# 
+# driver: :  transfer=1 | wdata =       247 | addr = 44 | write_read =0  | strb =10 | pready =1 | pslverr=0 | prdata =        40  | time=550 
+#  monitor : psel =0  | paddr=204 | pwrite=1 | penable =0 | transfer_done=0  | pstrb =15  | pwdata =       194  | rdata =         0  | error =0 | time=550
+# apb_pkg.apb_reference.run  ref:fail : psel =1  | paddr= 44 | pwrite=0 | penable =0 | transfer_done=0  | pstrb =10  | pwdata =         0  | rdata =         0  | error =0  | time =550 
+# scoreboard mon:fail : psel =0  | paddr=204 | pwrite=1 | penable =0 | transfer_done=0  | pstrb =15  | pwdata =       194  | rdata =         0  | error =0 | tine =550 
+# scoreboard ref:fail : psel =1  | paddr= 44 | pwrite=0 | penable =0 | transfer_done=0  | pstrb =10  | pwdata =         0  | rdata =         0  | error =0 | time =550
+# ====================================================================================================================================================
+# 
+# driver: :  transfer=1 | wdata =        68 | addr = 20 | write_read =0  | strb = 0 | pready =1 | pslverr=0 | prdata =        30  | time=570 
+#  monitor : psel =1  | paddr=204 | pwrite=1 | penable =0 | transfer_done=0  | pstrb =15  | pwdata =       194  | rdata =         0  | error =0 | time=570
+# apb_pkg.apb_reference.run  ref:fail : psel =1  | paddr= 20 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0  | time =570 
+# scoreboard mon:fail : psel =1  | paddr=204 | pwrite=1 | penable =0 | transfer_done=0  | pstrb =15  | pwdata =       194  | rdata =         0  | error =0 | tine =570 
+# scoreboard ref:fail : psel =1  | paddr= 20 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0 | time =570
+# ====================================================================================================================================================
+# 
+# driver: :  transfer=0 | wdata =        13 | addr =206 | write_read =0  | strb =11 | pready =0 | pslverr=0 | prdata =        76  | time=590 
+#  monitor : psel =1  | paddr= 44 | pwrite=0 | penable =1 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0 | time=590
+# apb_pkg.apb_reference.run  ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0  | time =590 
+# scoreboard mon:fail : psel =1  | paddr= 44 | pwrite=0 | penable =1 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0 | tine =590 
+# scoreboard ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0 | time =590
+# ====================================================================================================================================================
+# 
+# driver: :  transfer=1 | wdata =        76 | addr =103 | write_read =0  | strb = 0 | pready =1 | pslverr=0 | prdata =         9  | time=610 
+#  monitor : psel =1  | paddr= 44 | pwrite=0 | penable =1 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0 | time=610
+# apb_pkg.apb_reference.run  ref:fail : psel =1  | paddr=103 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0  | time =610 
+# scoreboard mon:fail : psel =1  | paddr= 44 | pwrite=0 | penable =1 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0 | tine =610 
+# scoreboard ref:fail : psel =1  | paddr=103 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0 | time =610
+# ====================================================================================================================================================
+# 
+# ** Error: Assertion error.
+#    Time: 610 ns Started: 610 ns  Scope: top.intrf File: apb_interface.sv Line: 45 Expr: ~PSEL
+# ** Error: Assertion error.
+#    Time: 610 ns Started: 590 ns  Scope: top.intrf File: apb_interface.sv Line: 52 Expr: ~PENABLE
+# driver: :  transfer=1 | wdata =       180 | addr =145 | write_read =0  | strb =13 | pready =0 | pslverr=0 | prdata =       134  | time=630 
+#  monitor : psel =0  | paddr= 44 | pwrite=0 | penable =0 | transfer_done=1  | pstrb = 0  | pwdata =         0  | rdata =         9  | error =0 | time=630
+# apb_pkg.apb_reference.run  ref:fail : psel =1  | paddr=145 | pwrite=0 | penable =0 | transfer_done=0  | pstrb =13  | pwdata =         0  | rdata =         0  | error =0  | time =630 
+# scoreboard mon:fail : psel =0  | paddr= 44 | pwrite=0 | penable =0 | transfer_done=1  | pstrb = 0  | pwdata =         0  | rdata =         9  | error =0 | tine =630 
+# scoreboard ref:fail : psel =1  | paddr=145 | pwrite=0 | penable =0 | transfer_done=0  | pstrb =13  | pwdata =         0  | rdata =         0  | error =0 | time =630
+# ====================================================================================================================================================
+# 
+# driver: :  transfer=1 | wdata =       136 | addr =145 | write_read =0  | strb = 3 | pready =0 | pslverr=1 | prdata =       134  | time=650 
+#  monitor : psel =1  | paddr= 44 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         9  | error =0 | time=650
+# apb_pkg.apb_reference.run  ref:fail : psel =1  | paddr=145 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 3  | pwdata =         0  | rdata =         0  | error =0  | time =650 
+# scoreboard mon:fail : psel =1  | paddr= 44 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         9  | error =0 | tine =650 
+# scoreboard ref:fail : psel =1  | paddr=145 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 3  | pwdata =         0  | rdata =         0  | error =0 | time =650
+# ====================================================================================================================================================
+# 
+# ** Error: Assertion error.
+#    Time: 650 ns Started: 630 ns  Scope: top.intrf File: apb_interface.sv Line: 52 Expr: PSEL
+# driver: :  transfer=0 | wdata =       250 | addr =145 | write_read =0  | strb = 4 | pready =0 | pslverr=1 | prdata =       134  | time=670 
+#  monitor : psel =1  | paddr=145 | pwrite=0 | penable =1 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         9  | error =0 | time=670
+# apb_pkg.apb_reference.run  ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0  | time =670 
+# scoreboard mon:fail : psel =1  | paddr=145 | pwrite=0 | penable =1 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         9  | error =0 | tine =670 
+# scoreboard ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0 | time =670
+# ====================================================================================================================================================
+# 
+# driver: :  transfer=1 | wdata =        20 | addr =145 | write_read =0  | strb = 1 | pready =1 | pslverr=0 | prdata =       134  | time=690 
+#  monitor : psel =1  | paddr=145 | pwrite=0 | penable =1 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         9  | error =0 | time=690
+# apb_pkg.apb_reference.run  ref:fail : psel =1  | paddr=145 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 1  | pwdata =         0  | rdata =         0  | error =0  | time =690 
+# scoreboard mon:fail : psel =1  | paddr=145 | pwrite=0 | penable =1 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         9  | error =0 | tine =690 
+# scoreboard ref:fail : psel =1  | paddr=145 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 1  | pwdata =         0  | rdata =         0  | error =0 | time =690
+# ====================================================================================================================================================
+# 
+# ** Error: Assertion error.
+#    Time: 690 ns Started: 690 ns  Scope: top.intrf File: apb_interface.sv Line: 45 Expr: ~PSEL
+# ** Error: Assertion error.
+#    Time: 690 ns Started: 670 ns  Scope: top.intrf File: apb_interface.sv Line: 52 Expr: ~PENABLE
+# driver: :  transfer=1 | wdata =        42 | addr = 96 | write_read =0  | strb = 2 | pready =1 | pslverr=1 | prdata =       159  | time=710 
+#  monitor : psel =0  | paddr=145 | pwrite=0 | penable =0 | transfer_done=1  | pstrb = 0  | pwdata =         0  | rdata =       134  | error =0 | time=710
+# apb_pkg.apb_reference.run  ref:fail : psel =1  | paddr= 96 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 2  | pwdata =         0  | rdata =         0  | error =0  | time =710 
+# scoreboard mon:fail : psel =0  | paddr=145 | pwrite=0 | penable =0 | transfer_done=1  | pstrb = 0  | pwdata =         0  | rdata =       134  | error =0 | tine =710 
+# scoreboard ref:fail : psel =1  | paddr= 96 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 2  | pwdata =         0  | rdata =         0  | error =0 | time =710
+# ====================================================================================================================================================
+# 
+# driver: :  transfer=1 | wdata =       208 | addr =203 | write_read =0  | strb = 5 | pready =1 | pslverr=0 | prdata =       193  | time=730 
+#  monitor : psel =1  | paddr=145 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =       134  | error =0 | time=730
+# apb_pkg.apb_reference.run  ref:fail : psel =1  | paddr=203 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 5  | pwdata =         0  | rdata =         0  | error =0  | time =730 
+# scoreboard mon:fail : psel =1  | paddr=145 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =       134  | error =0 | tine =730 
+# scoreboard ref:fail : psel =1  | paddr=203 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 5  | pwdata =         0  | rdata =         0  | error =0 | time =730
+# ====================================================================================================================================================
+# 
+# ** Error: Assertion error.
+#    Time: 730 ns Started: 710 ns  Scope: top.intrf File: apb_interface.sv Line: 52 Expr: PSEL
+# driver: :  transfer=0 | wdata =        98 | addr =248 | write_read =0  | strb = 5 | pready =1 | pslverr=0 | prdata =        51  | time=750 
+#  monitor : psel =1  | paddr= 96 | pwrite=0 | penable =1 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =       134  | error =0 | time=750
+# apb_pkg.apb_reference.run  ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0  | time =750 
+# scoreboard mon:fail : psel =1  | paddr= 96 | pwrite=0 | penable =1 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =       134  | error =0 | tine =750 
+# scoreboard ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0 | time =750
+# ====================================================================================================================================================
+# 
+# driver: :  transfer=1 | wdata =        85 | addr =246 | write_read =0  | strb = 7 | pready =0 | pslverr=0 | prdata =       235  | time=770 
+#  monitor : psel =0  | paddr= 96 | pwrite=0 | penable =0 | transfer_done=1  | pstrb = 0  | pwdata =         0  | rdata =        51  | error =0 | time=770
+# apb_pkg.apb_reference.run  ref:fail : psel =1  | paddr=246 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 7  | pwdata =         0  | rdata =         0  | error =0  | time =770 
+# scoreboard mon:fail : psel =0  | paddr= 96 | pwrite=0 | penable =0 | transfer_done=1  | pstrb = 0  | pwdata =         0  | rdata =        51  | error =0 | tine =770 
+# scoreboard ref:fail : psel =1  | paddr=246 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 7  | pwdata =         0  | rdata =         0  | error =0 | time =770
+# ====================================================================================================================================================
+# 
+# ** Error: Assertion error.
+#    Time: 770 ns Started: 770 ns  Scope: top.intrf File: apb_interface.sv Line: 45 Expr: ~PSEL
+# ** Error: Assertion error.
+#    Time: 770 ns Started: 750 ns  Scope: top.intrf File: apb_interface.sv Line: 52 Expr: ~PENABLE
+# driver: :  transfer=1 | wdata =       104 | addr =246 | write_read =0  | strb = 5 | pready =0 | pslverr=0 | prdata =       235  | time=790 
+#  monitor : psel =1  | paddr= 96 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =        51  | error =0 | time=790
+# apb_pkg.apb_reference.run  ref:fail : psel =1  | paddr=246 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 5  | pwdata =         0  | rdata =         0  | error =0  | time =790 
+# scoreboard mon:fail : psel =1  | paddr= 96 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =        51  | error =0 | tine =790 
+# scoreboard ref:fail : psel =1  | paddr=246 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 5  | pwdata =         0  | rdata =         0  | error =0 | time =790
+# ====================================================================================================================================================
+# 
+# driver: :  transfer=1 | wdata =        79 | addr =246 | write_read =0  | strb = 7 | pready =1 | pslverr=1 | prdata =       235  | time=810 
+#  monitor : psel =1  | paddr=246 | pwrite=0 | penable =1 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =        51  | error =0 | time=810
+# apb_pkg.apb_reference.run  ref:fail : psel =1  | paddr=246 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 7  | pwdata =         0  | rdata =         0  | error =0  | time =810 
+# scoreboard mon:fail : psel =1  | paddr=246 | pwrite=0 | penable =1 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =        51  | error =0 | tine =810 
+# scoreboard ref:fail : psel =1  | paddr=246 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 7  | pwdata =         0  | rdata =         0  | error =0 | time =810
+# ====================================================================================================================================================
+# 
+# driver: :  transfer=1 | wdata =       110 | addr =229 | write_read =0  | strb =15 | pready =1 | pslverr=0 | prdata =       247  | time=830 
+#  monitor : psel =0  | paddr=246 | pwrite=0 | penable =0 | transfer_done=1  | pstrb = 0  | pwdata =         0  | rdata =       235  | error =1 | time=830
+# apb_pkg.apb_reference.run  ref:fail : psel =1  | paddr=229 | pwrite=0 | penable =0 | transfer_done=0  | pstrb =15  | pwdata =         0  | rdata =         0  | error =0  | time =830 
+# scoreboard mon:fail : psel =0  | paddr=246 | pwrite=0 | penable =0 | transfer_done=1  | pstrb = 0  | pwdata =         0  | rdata =       235  | error =1 | tine =830 
+# scoreboard ref:fail : psel =1  | paddr=229 | pwrite=0 | penable =0 | transfer_done=0  | pstrb =15  | pwdata =         0  | rdata =         0  | error =0 | time =830
+# ====================================================================================================================================================
+# 
+# ** Error: Assertion error.
+#    Time: 830 ns Started: 810 ns  Scope: top.intrf File: apb_interface.sv Line: 52 Expr: ~PENABLE
+# driver: :  transfer=0 | wdata =        84 | addr =213 | write_read =0  | strb =12 | pready =0 | pslverr=1 | prdata =        27  | time=850 
+#  monitor : psel =1  | paddr=246 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =       235  | error =0 | time=850
+# apb_pkg.apb_reference.run  ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0  | time =850 
+# scoreboard mon:fail : psel =1  | paddr=246 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =       235  | error =0 | tine =850 
+# scoreboard ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0 | time =850
+# ====================================================================================================================================================
+# 
+# ** Error: Assertion error.
+#    Time: 850 ns Started: 830 ns  Scope: top.intrf File: apb_interface.sv Line: 52 Expr: PSEL
+# driver: :  transfer=1 | wdata =       159 | addr =110 | write_read =0  | strb = 2 | pready =1 | pslverr=1 | prdata =       173  | time=870 
+#  monitor : psel =1  | paddr=229 | pwrite=0 | penable =1 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =       235  | error =0 | time=870
+# apb_pkg.apb_reference.run  ref:fail : psel =1  | paddr=110 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 2  | pwdata =         0  | rdata =         0  | error =0  | time =870 
+# scoreboard mon:fail : psel =1  | paddr=229 | pwrite=0 | penable =1 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =       235  | error =0 | tine =870 
+# scoreboard ref:fail : psel =1  | paddr=110 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 2  | pwdata =         0  | rdata =         0  | error =0 | time =870
+# ====================================================================================================================================================
+# 
+# ** Error: Assertion error.
+#    Time: 870 ns Started: 870 ns  Scope: top.intrf File: apb_interface.sv Line: 45 Expr: ~PSEL
+# driver: :  transfer=1 | wdata =       153 | addr =155 | write_read =0  | strb = 5 | pready =0 | pslverr=1 | prdata =       208  | time=890 
+#  monitor : psel =0  | paddr=229 | pwrite=0 | penable =0 | transfer_done=1  | pstrb = 0  | pwdata =         0  | rdata =       173  | error =1 | time=890
+# apb_pkg.apb_reference.run  ref:fail : psel =1  | paddr=155 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 5  | pwdata =         0  | rdata =         0  | error =0  | time =890 
+# scoreboard mon:fail : psel =0  | paddr=229 | pwrite=0 | penable =0 | transfer_done=1  | pstrb = 0  | pwdata =         0  | rdata =       173  | error =1 | tine =890 
+# scoreboard ref:fail : psel =1  | paddr=155 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 5  | pwdata =         0  | rdata =         0  | error =0 | time =890
+# ====================================================================================================================================================
+# 
+# driver: :  transfer=0 | wdata =       229 | addr =155 | write_read =0  | strb = 7 | pready =1 | pslverr=1 | prdata =       208  | time=910 
+#  monitor : psel =1  | paddr=229 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =       173  | error =0 | time=910
+# apb_pkg.apb_reference.run  ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0  | time =910 
+# scoreboard mon:fail : psel =1  | paddr=229 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =       173  | error =0 | tine =910 
+# scoreboard ref:fail : psel =0  | paddr=  0 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =         0  | error =0 | time =910
+# ====================================================================================================================================================
+# 
+# ** Error: Assertion error.
+#    Time: 910 ns Started: 890 ns  Scope: top.intrf File: apb_interface.sv Line: 52 Expr: PSEL
+# driver: :  transfer=1 | wdata =       178 | addr =155 | write_read =0  | strb = 3 | pready =1 | pslverr=1 | prdata =       208  | time=930 
+#  monitor : psel =1  | paddr=155 | pwrite=0 | penable =1 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =       173  | error =0 | time=930
+# apb_pkg.apb_reference.run  ref:fail : psel =1  | paddr=155 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 3  | pwdata =         0  | rdata =         0  | error =0  | time =930 
+# scoreboard mon:fail : psel =1  | paddr=155 | pwrite=0 | penable =1 | transfer_done=0  | pstrb = 0  | pwdata =         0  | rdata =       173  | error =0 | tine =930 
+# scoreboard ref:fail : psel =1  | paddr=155 | pwrite=0 | penable =0 | transfer_done=0  | pstrb = 3  | pwdata =         0  | rdata =         0  | error =0 | time =930
+# ====================================================================================================================================================
+# 
+# ** Error: Assertion error.
+#    Time: 930 ns Started: 930 ns  Scope: top.intrf File: apb_interface.sv Line: 45 Expr: ~PSEL
+# ** Error: Assertion error.
+#    Time: 970 ns Started: 950 ns  Scope: top.intrf File: apb_interface.sv Line: 52 Expr: PSEL
+# ** Error: Assertion error.
+#    Time: 1010 ns Started: 990 ns  Scope: top.intrf File: apb_interface.sv Line: 52 Expr: ~PENABLE
+# ** Error: Assertion error.
+#    Time: 1030 ns Started: 1010 ns  Scope: top.intrf File: apb_interface.sv Line: 52 Expr: PSEL
+# ** Note: $finish    : apb_top.sv(59)
+#    Time: 1050 ns  Iteration: 0  Instance: /top
+# Saving coverage database on exit...
+# End time: 22:18:06 on Jul 21,2026, Elapsed time: 0:00:02
+# Errors: 26, Warnings: 32
