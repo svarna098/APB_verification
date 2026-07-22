@@ -12,7 +12,7 @@ class apb_generator ;
 
   task apb();
 
-    for (int i=0 ; i<20;i=i+1)
+    for (int i=0 ; i<100;i=i+1)
 	
      begin
 

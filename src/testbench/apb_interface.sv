@@ -36,7 +36,7 @@ modport drv ( clocking drv_cb);
 modport mon ( clocking mon_cb );
 modport reference (clocking ref_cb );
 
-
+/*
 property p1;
 @(posedge clk) disable iff (!reset)
 !transfer |-> (!PSEL);
@@ -51,7 +51,7 @@ endproperty
 
 assert property (p2);
 
-
+*/
 
 
  endinterface

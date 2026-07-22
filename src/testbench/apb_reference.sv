@@ -180,7 +180,7 @@ endfunction
 task run ();
 repeat (1) @(vif.ref_cb);
 
-for (int i=0 ; i<20 ; i=i+1)
+for (int i=0 ; i<100 ; i=i+1)
 	begin
 
 		tx_ref = new();

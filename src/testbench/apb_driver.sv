@@ -40,7 +40,7 @@ class apb_driver;
    repeat (4) @ (vif.drv_cb);
 
 
-  for(int i=0 ;i<20;i=i+1)
+  for(int i=0 ;i<100;i=i+1)
    begin
 	  tx_drv=new();
 	  gen2drv.get (tx_drv);
@@ -68,6 +68,10 @@ class apb_driver;
 	  else 
 	 // repeat (1) @(vif.drv_cb)
 	    begin
+		if(i==0 )
+   		 tx_drv.wdata_in= 32'hffffffff;
+		if (i==1)
+    		tx_drv.wdata_in =32'd0;
 		  vif.drv_cb.wdata_in <= tx_drv.wdata_in;
 		  vif.drv_cb.PREADY <= tx_drv.PREADY;
 		  vif.drv_cb.addr_in <= tx_drv.addr_in;
